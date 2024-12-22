@@ -8,7 +8,7 @@ struct NewNoteView: View {
     @State private var selectedDestinationId: UUID?
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section("笔记内容") {
                     TextEditor(text: $noteContent)

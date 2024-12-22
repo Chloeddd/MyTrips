@@ -16,7 +16,7 @@ struct EditNoteView: View {
     }
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             Form {
                 Section("笔记内容") {
                     TextEditor(text: $editedContent)

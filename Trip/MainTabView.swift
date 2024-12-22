@@ -88,7 +88,7 @@ struct NewTripView: View {
     @State private var tripTitle = ""
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView {
                 VStack(spacing: 20) {
                     HStack{
